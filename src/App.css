@@ -1,0 +1,53 @@
+@import "~antd/dist/antd.css";
+
+.container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.ant-upload.ant-upload-drag .ant-upload-drag-container {
+  padding: 10px;
+  width: 200px;
+}
+
+.ant-btn,
+.ant-btn:active,
+.ant-btn:focus {
+  color: grey;
+}
+
+.ant-layout-header {
+  height: 50px;
+  padding: 0px;
+
+  background: white;
+}
+.ant-layout-sider {
+  position: relative;
+  min-width: 0;
+  background: white;
+  transition: all 0.2s;
+}
+#components-layout-demo-top-side-2 .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.site-layout-background {
+  background: #fff;
+  margin-top:50px;
+}
+
+.ant-layout-footer {
+  padding: 12px 25px;
+  font-size: 14px;
+  background: #f0f2f5;
+}
