@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router";
-
 import { Menu } from "antd";
 import {
   MenuOutlined,
@@ -39,13 +38,12 @@ const items = [
     getItem("Users", "users", <UserOutlined />),
     getItem("Products", "products", <ShoppingOutlined />),
     getItem("Transactions", "transactions", <DollarOutlined />),
-    getItem("Reports", "reports", <BarChartOutlined />),
   ]),
 
   getItem("Notifications", "sub3", <BellOutlined />, [
     getItem("Mail", "mail", <MailOutlined />),
     getItem("Feedback", "feedback", <CommentOutlined />),
-    // getItem("Messages", "messages", <MessageOutlined />),
+    getItem("Messages", "messages", <MessageOutlined />),
   ]),
 ];
 export default function Sidebar() {

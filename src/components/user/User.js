@@ -8,7 +8,7 @@ export default function Users() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "50vh" 
+        height: "70vh" ,
       }}
     >
       <Upload.Dragger
