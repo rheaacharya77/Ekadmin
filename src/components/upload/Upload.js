@@ -1,7 +1,7 @@
 import React from "react";
 import { Upload, Button,Spin } from "antd";
 
-export default function Users() {
+export default function ImageUpload() {
   return (
     <div
       style={{
@@ -15,10 +15,6 @@ export default function Users() {
         multiple
         listType="picture"
         accept=".jpeg,.png,.jpg"
-        beforeUpload={(file) => {
-          console.log(file);
-          return true;
-        }}
         iconRender={() => {
             return<Spin></Spin>
         }}

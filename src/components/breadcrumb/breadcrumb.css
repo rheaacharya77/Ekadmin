@@ -1,0 +1,27 @@
+
+  .breadcrumb-text {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+  .breadcrumb-wrap{
+  width: 250px;
+  padding: 10px 16px;
+  background-color: #fafafa;
+  border-radius: 20px;
+}
+
+.ant-breadcrumb-separator {
+    margin-left: 6px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-breadcrumb li:last-child {
+    color: rgba(0, 0, 0, 0.35);
+    padding: 0;
+    margin-top:1px;
+}
+
+.breadcrumb-icon{
+    margin-left: 15px;
+}

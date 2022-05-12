@@ -1,7 +1,6 @@
 import React from 'react';
-import Featured from '../featured/Featured';
-import Chart from '../chart/Chart';
-
+import Chart from '../components/chart/Chart';
+import Featured from '../components/featured/Featured';
 
 export default function Home() {
   return (

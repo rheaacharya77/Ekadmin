@@ -2,18 +2,18 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
-import Mail from "./components/mail/Mail";
-import Home from "./components/home/Home";
-import Users from "./components/user/User";
-import Sales from "./components/sales/Sales";
 import AppHeader from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
-import Reports from "./components/reports/Reports";
-import Feedback from "./components/feedback/Feedback";
-import Messages from "./components/messages/Messages";
-import Products from "./components/products/Products";
-import Analytics from "./components/analytics/Analytics";
-import Transactions from "./components/transactions/Transactions";
+
+import Mail from "./pages/Mail";
+import Home from "./pages/Home";
+import User from "./pages/User";
+import Sales from "./pages/Sales";
+import Feedback from "./pages/Feedback";
+import Messages from "./pages/Messages";
+import Products from "./pages/Products";
+import Analytics from "./pages/Analytics";
+import Transactions from "./pages/Transactions";
 
 import { Layout } from "antd";
 const { Sider, Header,Content } = Layout;
@@ -31,15 +31,14 @@ function App() {
         <Content style={{ margin: "55px 25px" }}>
         <Routes>
           <Route path="/home" element={<Home />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/sales" element={<Sales />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/transactions" element={<Transactions />} />
-          <Route path="/reports" element={<Reports />} />
+          <Route path="/users" element={<User/>} />
           <Route path="/mail" element={<Mail />} />
+          <Route path="/sales" element={<Sales />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/messages" element={<Messages />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/transactions" element={<Transactions />} />
         </Routes>
         </Content>
       </Layout>

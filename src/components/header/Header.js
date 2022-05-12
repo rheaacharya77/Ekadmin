@@ -1,7 +1,10 @@
 import React from "react";
-import profile from "../../profile.png";
 import "./header.css";
+import profile from "../../profile.png";
+
+import ImageDropdown from "../imagedropdown/ImageDropdown";
 import {BellOutlined, SettingOutlined, GlobalOutlined} from "@ant-design/icons";
+
 export default function AppHeader() {
   return (
     <div className="topbar">
@@ -18,10 +21,7 @@ export default function AppHeader() {
           <GlobalOutlined />
             <span className="topIconBadge">2</span>
           </div>
-          <div className="topbarIconContainer">
-            <SettingOutlined />
-          </div>
-          <img src={profile} alt="profile" className="topAvatar" />
+          <ImageDropdown/> 
         </div>
       </div>
     </div>

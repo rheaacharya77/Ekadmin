@@ -1,9 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import { Menu } from "antd";
+import { Menu} from "antd";
 import {
   MenuOutlined,
-  BarChartOutlined,
   BellOutlined,
   RiseOutlined,
   ShoppingOutlined,
@@ -46,8 +45,10 @@ const items = [
     getItem("Messages", "messages", <MessageOutlined />),
   ]),
 ];
+
 export default function Sidebar() {
   let navigate = useNavigate();
+  
 
   const onClick = (e) => {
     console.log(e.key);
@@ -55,7 +56,7 @@ export default function Sidebar() {
   };
 
   return (
-
+    <>
       <Menu
         onClick={onClick}
         style={{ height: "100%" }}
@@ -64,5 +65,7 @@ export default function Sidebar() {
         mode="inline"
         items={items}
       />
+      
+    </>
   );
 }
