@@ -5,9 +5,11 @@ import "./App.css";
 import AppHeader from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
 
+
 import Mail from "./pages/Mail";
 import Home from "./pages/Home";
 import User from "./pages/User";
+import Error from "./pages/Error";
 import Sales from "./pages/Sales";
 import Feedback from "./pages/Feedback";
 import Messages from "./pages/Messages";
@@ -39,6 +41,7 @@ function App() {
           <Route path="/messages" element={<Messages />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/transactions" element={<Transactions />} />
+          <Route path="*" element ={<Error/>}/>
         </Routes>
         </Content>
       </Layout>

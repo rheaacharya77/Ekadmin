@@ -29,8 +29,8 @@ function getItem(label, key, icon, children, type) {
 const items = [
   getItem("Dashboard", "sub1", <AreaChartOutlined />, [
     getItem("Home", "home", <HomeOutlined />),
-    getItem("Analytics", "analytics", <FundOutlined />),
     getItem("Sales", "sales", <RiseOutlined />),
+    getItem("Analytics", "analytics", <FundOutlined />),
   ]),
 
   getItem("Quick Menu", "sub2", <MenuOutlined />, [

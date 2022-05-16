@@ -8,6 +8,7 @@ export default function BreadCrumb() {
   const location = useLocation();
   const { pathname } = location;
   const path = pathname.toUpperCase().split('/');
+  console.log(path)
 
   return (
     <>

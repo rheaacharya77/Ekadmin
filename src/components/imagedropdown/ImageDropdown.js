@@ -1,34 +1,38 @@
 import React from "react";
 import profile from "../../profile.png";
 
-import { Menu, Dropdown, message, Space } from "antd";
+import { Menu, Dropdown, Space } from "antd";
+import {useNavigate} from 'react-router'
 
-
-const onClick = ({ key }) => {
-  message.info(`Click on item ${key}`);
-};
-
-const menu = (
-  <Menu
-    onClick={onClick}
-    items={[
-      {
-        label: "Edit Profile",
-        key: "1",
-      },
-      {
-        label: "Settings",
-        key: "2",
-      },
-      {
-        label: "Logout",
-        key: "3",
-      },
-    ]}
-  />
-);
 
 export default function ImageDropdown() {
+  let navigate = useNavigate();
+  
+  const onClick = (e) => {
+    console.log(e.key);
+    navigate(`/${e.key}`);
+  };
+  
+  const menu = (
+    <Menu
+      onClick={onClick}
+      items={[
+        {
+          label: "Edit Profile",
+          key: "users",
+        },
+        {
+          label: "Settings",
+          key: "2",
+        },
+        {
+          label: "Logout",
+          key: "3",
+        },
+      ]}
+    />
+  );
+
 return(  <Dropdown overlay={menu}>
       <Space>
       <img src={profile} alt="profile" className="topAvatar" />
